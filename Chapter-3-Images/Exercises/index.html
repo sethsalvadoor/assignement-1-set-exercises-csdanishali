@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature Landscapes Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      filter: contrast(110%) brightness(95%) saturate(120%);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .license {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nature Landscapes Gallery</h1>
+  <div class="gallery">
+    
+    <div class="image-container">
+      <img src="/Chapter-3-Images/Exercises/images/images1.avif"
+           width="800"
+           height="500"
+           alt="Mountain landscape with pine trees"
+           title="Mountain view with pine forest by Nathan Anderson" />
+      <p class="license">Photo by Nathan Anderson on Unsplash — Free for commercial use, no attribution required.</p>
+    </div>
+
+    <div class="image-container">
+      <img src="/Chapter-3-Images/Exercises/images/images2.avif"
+           width="800"
+           height="500"
+           alt="Sunset over the ocean"
+           title="Sunset over the sea by Sebastian Leonhardt" />
+      <p class="license">Photo by Sebastian Leonhardt on Unsplash — Free for commercial use, no attribution required.</p>
+    </div>
+
+    <div class="image-container">
+      <img src="/Chapter-3-Images/Exercises/images/images3.avif"
+           width="800"
+           height="500"
+           alt="Green forest path with morning light"
+           title="Forest trail in morning light by Luca Bravo" />
+      <p class="license">Photo by Luca Bravo on Unsplash — Free for commercial use, no attribution required.</p>
+    </div>
+
+  </div>
+</body>
+</html>
