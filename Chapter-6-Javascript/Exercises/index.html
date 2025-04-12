@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Petrol Calculator</title>
+</head>
+<body>
+
+  <!-- Calculator container -->
+  <div class="calculator">
+    <h1>Petrol Calculator</h1>
+
+    <!-- Input for petrol cost per liter -->
+    <input type="number" id="petrolCost" step="0.01" value="1.72" placeholder="Cost per liter" onclick="setActiveInput('petrolCost')" />
+
+    <!-- Input for liters purchased -->
+    <input type="number" id="litersPurchased" step="0.01" value="0" placeholder="Liters purchased" onclick="setActiveInput('litersPurchased')" />
+
+    <!-- On-screen number pad -->
+    <div id="numberPad">
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button onclick="backspace()">←</button>
+    </div>
+
+    <!-- Centered action buttons -->
+    <div id="actionButtons">
+      <button onclick="calculateTotal()">Calculate</button>
+      <button onclick="clearInputs()">Clear</button>
+    </div>
+
+    <!-- Total cost display -->
+    <p id="totalCost">Total: $0.00</p>
+  </div>
+
+  <script src="/Chapter-6-Javascript/Exercises/index.js"></script>
+</body>
+</html>
