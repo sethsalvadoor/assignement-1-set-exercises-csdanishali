@@ -6,6 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #000;    /* ← solid black background */
+  background-image: url(alien.png);   /* your bg image */
+  background-size: cover;                     /* scale to cover */
+  background-position: center center;         /* center it */
+  background-repeat: no-repeat;               /* no tiling */
+  background-attachment: fixed;               /* FIXED in viewport */
+
 }
 
 /* Calculator box styling */
