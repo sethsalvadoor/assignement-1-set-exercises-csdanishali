@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Psychedelic Fish Sampler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PSYCHEDELIC FISH</h1>
+  </header>
+
+  <div class="container">
+    <!-- Text‑to‑Speech Column -->
+    <div class="tts-column">
+      <h2>Type Here</h2>
+      <textarea id="tts-input" placeholder="Type something…"></textarea>
+      <button id="tts-button">Say it</button>
+    </div>
+
+    <!-- Sampler Column -->
+    <div class="samples-column">
+      <h2>Sample Bank</h2>
+      <div class="samples-nav">
+        <button id="prev-btn" class="nav left hidden">&larr;</button>
+        <div class="samples-grid">
+
+          <!-- Sample #1 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <!-- nested audio -->
+              <audio src="../Audio/ah-ha.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">1. Ah‑Ha</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #2 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/dan.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">2. Dan</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #3 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/back-of-the-net.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">3. Back of the net</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #4 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/bangoutoforder.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">4. Bang out of order</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #5 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/jurassic-park.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">5. Jurassic Park</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #6 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/smell-my-cheese.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">6. Smell my cheese</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #7 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/goal.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">7. Goal</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #8 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/kiss-my-face.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">8. Kiss my face</div>
+            <div class="duration">…</div>
+          </div>
+
+          <!-- Sample #9 -->
+          <div class="sample-card">
+            <button class="play-button">
+              <audio src="../Audio/hello-partridge.mp3" preload="metadata"></audio>
+              Play
+            </button>
+            <div class="title">9. Hello Partridge</div>
+            <div class="duration">…</div>
+          </div>
+
+        </div>
+        <button id="next-btn" class="nav right">&rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

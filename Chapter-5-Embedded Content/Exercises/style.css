@@ -1,0 +1,28 @@
+
+/* 1. Make html/body fill the viewport, remove default margins */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 2. Apply the full‑screen fixed background */
+body {
+  background-image: url('image.jpg');   /* your bg image */
+  background-size: cover;                     /* scale to cover */
+  background-position: center center;         /* center it */
+  background-repeat: no-repeat;               /* no tiling */
+  background-attachment: fixed;               /* FIXED in viewport */
+  
+  /* 3. Centering context for the video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 4. Video styling */
+video {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
